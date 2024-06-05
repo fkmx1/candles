@@ -1,14 +1,14 @@
-html {
+html{
     box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before {
+*::before{
     box-sizing: inherit;
 }
 
-body {
+body{
     color: #000;
     font-family: "Comfortaa", sans-serif;
     /* font-family: "Yeseva One", serif; */
@@ -18,47 +18,62 @@ body {
     line-height: 1.2;
 }
 
-a {
+a{
     text-decoration: none;
     color: inherit;
 }
 
-header {
+header{
     background-color: #fff8f3;
 }
 
-ul {
+ul{
     list-style: none;
 }
 
-.container {
+.container{
     max-width: 1180px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
 }
 
-.header__inner {
+.menu__btn{
+    display: none;
+    display: flex;
+    width: 30px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.menu__btn span{
+    display: none;
+}
+
+.header__inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 4px;
 }
 
-.menu__list {
+.menu__list{
     display: flex;
     gap: 20px;
 }
 
-.menu__list-link {
+.menu__list-link{
     text-transform: uppercase;
 }
 
-.phone {
+.phone{
     position: relative;
 }
 
-.phone::before {
+.phone::before{
     position: absolute;
     content: '';
     background-image: url(../images/phone.svg);
@@ -79,29 +94,29 @@ ul {
     align-items: center;
 }
 
-.footer__contacts {
+.footer__contacts{
     display: flex;
     flex-direction: column;
     width: 230px;
 }
 
-.email {
+.email{
     margin: 17px 0;
 }
 
-.footer__social {
+.footer__social{
     display: flex;
     gap: 15px;
 }
 
-@media (max-width: 1000px) {
-    .container {
+@media (max-width: 1000px){
+    .container{
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px){
     .footer__inner{
         flex-wrap: wrap;
     }
@@ -115,17 +130,28 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     body{
         font-size: 10px;
     }
     .container{
         max-width: 640px;
     }
-    .phone::before {
-        width: 16px;
-        height: 16px;
-        /* left: -23px;
-        top: -2px; */
+    .phone::before{
+        width: 14px;
+        height: 14px;
+        left: -16px;
+        top: -2px;
+        background-size: cover ;
+    }
+}
+
+@media (max-width: 640px){
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .menu__list{
+        display: block;
     }
 }

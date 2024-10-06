@@ -1,0 +1,22 @@
+body{
+
+}
+
+a{
+
+}
+
+.container{
+    max-width: 1160px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+header{
+    border-color: #FFF8F3;
+}
+
+.header__inner{
+
+}
